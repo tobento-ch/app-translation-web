@@ -1,0 +1,72 @@
+{
+    "name": "tobento/app-translation-web",
+    "version": "2.0",
+    "type": "library",
+    "description": "A web interface for managing, editing, importing, exporting, collecting and publishing translations across multiple applications.",
+    "keywords": [
+        "tobento",
+        "package",
+        "app",
+        "translation",
+        "translator",
+        "ui"
+	],
+    "homepage": "https://www.tobento.ch",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tobias Strub",
+            "email": "info@tobento.ch",
+            "homepage": "https://www.tobento.ch"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": ">=8.4",
+        "tobento/app": "^2.0",
+        "tobento/app-cache": "^2.0",
+        "tobento/app-card": "^2.0",
+        "tobento/app-crud": "^2.0",
+        "tobento/app-http": "^2.0",
+        "tobento/app-import-export": "^2.0",
+        "tobento/app-machine-translator": "^2.0",
+        "tobento/app-migration": "^2.0",
+        "tobento/app-notifier": "^2.0",
+        "tobento/app-language": "^2.0",
+        "tobento/app-logging": "^2.0",
+        "tobento/app-queue": "^2.0",
+        "tobento/app-translation": "^2.0",
+        "tobento/app-user": "^2.0",
+        "tobento/app-view": "^2.0",
+        "tobento/apps": "^2.0",
+        "tobento/service-collection": "^2.0",
+        "tobento/service-file-creator": "^2.0",
+        "tobento/service-iterable": "^2.0",
+        "tobento/service-repository": "^2.0",
+        "tobento/service-repository-storage": "^2.0"
+    },  
+    "require-dev": {
+        "phpunit/phpunit": "^12.3",
+        "vimeo/psalm": "^6.13",
+        "tobento/app-job": "^2.0",
+        "tobento/app-logging": "^2.0",
+        "tobento/app-user-web": "^2.0",
+        "tobento/app-testing": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tobento\\App\\Translation\\Web\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tobento\\App\\Translation\\Web\\Test\\": "tests",
+            "Tobento\\Service\\Console\\Test\\": "vendor/tobento/service-console/tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit --testdox --colors=always",
+        "psalm": "vendor/bin/psalm"
+    }
+}
