@@ -245,7 +245,6 @@ This feature offers:
 - a **collect** action to gather missing translation messages or keys from source files without overwriting existing translations  
 - bulk actions for publishing or deleting translations  
 - a **create** action for creating translations for a selected **locale** and **app_id** (e.g. when adding a new locale), optionally using a machine translator  
-- optional machine-translated suggestions (via the planned Machine Translator Service)  
 - **bulk export/import** of translations using the [`app-import-export`](https://github.com/tobento-ch/app-import-export) package  
 - support for multi-app environments  
 
